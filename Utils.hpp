@@ -6,9 +6,9 @@
 #include <bitset>
 
 namespace Utils {
-	void HexToIntegers(_In_ std::string hex, _Out_ std::vector<unsigned long>& buffer);
-	void IntegersToBinary(_In_ std::vector<unsigned long> numbers, _Out_ std::vector<std::string>& buffer);
-	void BinaryToHex(_In_ std::vector<std::string> binaries, _Out_ std::string& buffer);
+	void HexToIntegers(std::string hex, std::vector<unsigned long>& buffer);
+	void IntegersToBinary(std::vector<unsigned long> numbers, std::vector<std::string>& buffer);
+	void BinaryToHex(std::vector<std::string> binaries, std::string& buffer);
 }
 
 #endif

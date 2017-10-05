@@ -3,7 +3,7 @@
 namespace Utils {
 
 // Converts a vector of binaries into one hex string
-void BinaryToHex(_In_ std::vector<std::string> binaries, _Out_ std::string& hexOut) {
+void BinaryToHex(std::vector<std::string> binaries, std::string& hexOut) {
 	for (int i = 0; i < binaries.size(); i++) {
 		std::stringstream s;
 		std::bitset<8> bits(binaries.at(i)); // convert string binaries to bitset for conversion functions
@@ -13,7 +13,7 @@ void BinaryToHex(_In_ std::vector<std::string> binaries, _Out_ std::string& hexO
 }
 
 // Converts a vector of unsigned long's into binaries using bitset
-void IntegersToBinary(_In_ std::vector<unsigned long> numbers, _Out_ std::vector<std::string>& binariesOut) {
+void IntegersToBinary(std::vector<unsigned long> numbers, std::vector<std::string>& binariesOut) {
 	for (int i = 0; i < 8; i++) {
 		std::bitset<8> binary(numbers.at(i)); // conversion to 8 bit binary
 		binariesOut.at(i).assign(binary.to_string());
@@ -21,7 +21,7 @@ void IntegersToBinary(_In_ std::vector<unsigned long> numbers, _Out_ std::vector
 }
 
 // Converts a hex string into a vector of integers
-void HexToIntegers(_In_ std::string hex, _Out_ std::vector<unsigned long>& numbersOut) {
+void HexToIntegers(std::string hex, std::vector<unsigned long>& numbersOut) {
 	for (int i = 2; i < hex.length() + 2; i += 2) {
 		std::stringstream ss;
 		ss << std::hex << hex.substr(i - 2, 2);

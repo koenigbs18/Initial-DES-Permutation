@@ -14,7 +14,7 @@ description: This function performs the intial DES permutation
 			 permute the even numbers of the passed binaries,
 			 and the second permuting the odd numbers.
 */
-void PermutateBinaryStrings(_In_ std::vector<std::string> inputBinaries, _Out_ std::vector<std::string>& outputPermutatedBinaries) {
+void PermutateBinaryStrings(std::vector<std::string> inputBinaries, std::vector<std::string>& outputPermutatedBinaries) {
 	// permutating evens ( top half )
 	int inputRowIndex = 0, inputColumnIndex = 1; // initialize input row and col indexes for evens parsing
 	for (int i = 7; i >= 0; i--) { // output column index

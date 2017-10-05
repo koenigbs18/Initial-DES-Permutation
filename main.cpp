@@ -1,21 +1,24 @@
 /*
 ************************************
-@Title:  Initial-DES-Permutation
+@Title:  Assignment 3
 @Author: Brett Koenig
 @Date:   10/4/17
 ************************************
 */
 #include "Utils.hpp"
 #include "DESPermutation.hpp"
-#include <Windows.h>
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 
 void PrintPermutation(std::string hex, int index);
 
 // Hex strings to permute
 const std::string hex1 = "3a456b73e24d2537";
+// hex1 permutated      : 3e89e2ee10dd259d
+
 const std::string hex2 = "624b3a2d92345f3d";
+// hex2 permutated      : 43f4e8ca10adce57
 
 int main()
 
