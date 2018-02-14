@@ -6,13 +6,13 @@ Function Permutate
 input:       vector of 8 bit binaries as strings
 output:      input binaries permutated with the initial DES algorithm
 description: This function performs the intial DES permutation
-			 on the passed binaries.  The vector of strings
-			 acts as a 2D 8x8 array, where the index of the
-			 string in the vector is the row, and the index
-			 of the character in the string is the the column.
-			 Two for loops are used, the first being used to
-			 permute the even numbers of the passed binaries,
-			 and the second permuting the odd numbers.
+	     on the passed binaries.  The vector of strings
+	     acts as a 2D 8x8 array, where the index of the
+	     string in the vector is the row, and the index
+	     of the character in the string is the the column.
+	     Two for loops are used, the first being used to
+	     permute the even numbers of the passed binaries,
+	     and the second permuting the odd numbers.
 */
 void PermutateBinaryStrings(std::vector<std::string> inputBinaries, std::vector<std::string>& outputPermutatedBinaries) {
 	// permutating evens ( top half )
